@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
         * {
             box-sizing: border-box;
         }
-        body{}
+        
         body {
             margin: 0;
         }
@@ -18,23 +18,55 @@
           padding: 20px;
           text-align: center; 
         }
+        .menu{
+            background-color: #333;
+            overflow: hidden;
+        }
+        .menu a{
+            color: white;
+            padding: 14px 16px;
+            float: left;
+            display: block;
+            text-decoration: none;
+        }
+        .coluna-50 {
+            float: left;
+            width: 50;
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
-    <DIV class="topo"><h1>Topo</h1>
+    <!---Tag semantica para o Topo-->
+    <header class="topo"><h1>Topo</h1>
     <p>Aqui a parte do Topo</p>
-    </DIV>
-    <DIV><a href="index.html">Voltar para a principal</a>
-        <a href="index.html">Voltar para a principal</a>
-        <a href="index.html">Voltar para a principal</a>
-        <a href="index.html">Voltar para a principal</a></DIV>
-    <DIV><h2>Coluna</h2>
+    </header>
+    
+    <!--Nav semântica para menu-->
+    <nav class="menu"><a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+    </nav>
+
+    <section class="coluna-50"><h2>Coluna</h2>
+        <br>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus ducimus perspiciatis fugiat quis, sed nostrum eius numquam officia tempore at maiores unde enim hic earum magni facilis eligendi sint.</p>
-    </DIV><br>
-    <div><h2>Coluna</h2>
+    </section>
+    <br>
+
+    <section class="coluna-50"><h2>Coluna</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas corporis ducimus fugit voluptates cupiditate molestias culpa, pariatur saepe recusandae deserunt illum inventore delectus facere maiores mollitia modi porro accusantium. At?</p>
-    </div>
+    </section>
+
     <br><br>
+
     <a href="index.html">Voltar para a principal</a>
+    
+    <br><br>
+
+    <footer>
+        <address>afsaf@outlook.pt</address>
+    </footer>
 </body>
 </html>
